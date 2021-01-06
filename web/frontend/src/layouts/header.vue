@@ -51,6 +51,7 @@
 
 <script>
 import { getOneKey } from '../api'
+
 export default {
   name: 'header',
   props: ['offsetTop'],
@@ -122,7 +123,7 @@ export default {
 
   .header-row1 {
     color: #333333;
-    background-color: #ffffff;
+    backdrop-filter: blur(24px);
     display: flex;
     align-items: center;
     width: 100%;
@@ -151,6 +152,7 @@ export default {
       div {
         margin: 0 30px 0 30px;
         text-align: center;
+
         &:hover {
           cursor: pointer;
           border-bottom: 1px solid #fa8072;
